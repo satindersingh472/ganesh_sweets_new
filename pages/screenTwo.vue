@@ -97,7 +97,16 @@ export default {
             description:""
         },
         {
-            name
+            name:"Samosa Chana",
+            image_name:"samosa_chana.png",
+            price:"",
+            description:""
+        },
+        {
+          name:"Samosa",
+          image_name:"samosa.png",
+          price:"",
+          description:""
         }
       ],
     };
