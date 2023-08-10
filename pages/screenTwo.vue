@@ -36,78 +36,83 @@ export default {
       imagePath: (image_name) =>
         require(`@/assets/images/snacks/${image_name}`),
       items: [
+      {
+            name:"Paneer Pakoda",
+            image_name:"paneer_pakoda2.png",
+            price:"$11.99/lb",
+            description:"Delicious paneer fitters, both cripsy and crunchy."
+        },
         {
           name: "Bread Pakoda",
-          image_name: "bread_pakoda.png",
+          image_name: "bread_pakoda2.png",
           price:"$1.60 Each",
           description: "Bread slices dipped in spiced gram flour batter and fried.",
         },
-        {
-            name:"Kadi Chawal",
-            image_name:"Kadi_chawal.png",
-            price:"",
-            description:""
-        },
-        {
-            name:"Aloo Poori",
-            image_name:"aloo_poori.png",
-            price:"",
-            description:""
-        },
-        {
-            name:"Chaat Papdi",
-            image_name:"chaat_papdi.png",
-            price:"",
-            description:""
-        },
+        
         {
             name:"Gobi Pakoda",
             image_name:"gobi_pakoda.png",
-            price:"",
-            description:""
+            price:"$10.99/lb",
+            description:"Crisp and tasty fried marinated cauliflower fritters."
         },
         {
             name:"Mix Pakoda",
-            image_name:"mix_pakoda.png",
-            price:"",
-            description:""
+            image_name:"mix_pakoda2.png",
+            price:"$8.99/lb",
+            description:"Made with flour, spices & ingredients like onion, veggies."
         },
         {
             name:"Mini Samosa",
             image_name:"mini_samosa.png",
-            price:"",
-            description:""
+            price:"2 for $1.25",
+            description:"Fried pastry with a filling like potatoes and peas."
         },
+       
         {
-            name:"Paneer Pakoda",
-            image_name:"paneer_pakoda.png",
-            price:"",
-            description:""
-        },
-        {
-            name:"Pao Bhaji",
-            image_name:"pao_bhaji.png",
-            price:"",
-            description:""
-        },
-        {
-            name:"Puri Chana",
-            image_name:"puri_chana.png",
-            price:"",
-            description:""
+          name:"Samosa",
+          image_name:"samosa_2.png",
+          price:"$1.25 each",
+          description:"Fried pastry with a filling like potatoes and peas."
         },
         {
             name:"Samosa Chana",
             image_name:"samosa_chana.png",
-            price:"",
-            description:""
+            price:"Reg samosa $6.50/Mini Samosa $5.50" , 
+            description:"Crunchy samosa is served with spicy channe(chickpeas)."
         },
         {
-          name:"Samosa",
-          image_name:"samosa.png",
-          price:"",
-          description:""
-        }
+        name:"Chaat Papdi",
+            image_name:"chaat_papdi.png",
+            price:"$5.99",
+            description:"The best of Bombay chaat, both sweet and sour."
+        },
+        {
+            name:"Kadi Chawal",
+            image_name:"Kadi_chawal.png",
+            price:"$6.99/ Available every Tuesday",
+            description:"Dish of onion fritters dunked in a spiced yogurt sauce."
+        },
+      
+        
+        {
+            name:"Pao Bhaji",
+            image_name:"pao_bhaji.png",
+            price:"$7.99 / Available every Friday",
+            description:"Combining soft bread with spicy veggies."
+        },
+        {
+            name:"Aloo Poori",
+            image_name:"aloo_poori.png",
+            price:"$7.99/ Available every Saturday and Sunday",
+            description:"3 Puris, Desi ghee suji halwa, aloo sabji, onion salad"
+        },
+        {
+            name:"Puri Chana",
+            image_name:"puri_chana.png",
+            price:"$7.99/ Available every Saturday and Sunday",
+            description:"3 Puris, Desi ghee suji halwa, channa sabji, onion salad"
+        },
+        
       ],
     };
   },
