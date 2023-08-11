@@ -23,17 +23,17 @@
 
       <h3 class="primary--text text-center text-h3">SPECIAL PRODUCTS</h3>
       <v-row class="mt-3">
-        <v-col cols="6" v-for="(item, index) in special" :key="index">
-          <v-row>
+        <v-col cols="6" v-for="(special, index) in specials" :key="index">
+          <v-row >
             <v-col cols="6">
               <v-card rounded="pill">
-                <v-img width="100%" :src="imagePath(`${item['image_name']}`)" :alt="`image of ${item['name']}`"></v-img>
+                <v-img width="100%" :src="imagePath(`${special['image_name']}`)" :alt="`image of ${special['name']}`"></v-img>
               </v-card>
             </v-col>
             <v-col align-self="center" class=" font-weight-bold text-h4" cols="6">
-              <p class="primary--text">{{ item["name"] }}</p>
-              <p class="text-h6 font-weight-regular">{{ item['description'] }}</p>
-              <p>{{ item['price'] }}</p>
+              <p class="primary--text">{{ special["name"] }}</p>
+              <p v-for="(desc,index) in special['description']" :key="index">{{desc}}</p>
+              <p>{{special['price'] }}</p>
 
             </v-col>
           </v-row>
@@ -86,42 +86,42 @@ export default {data() {
         
       ],
 
-      special: [
+      specials: [
       {
             name:"Sabji Container",
             image_name:"sabzi_container.png",
-            price:"1000 ml-$9.99/ 500ml-$6.99/ 250 ml- $3.49",
-            description:"ty"
+            price:"",
+            description:["1000 ml -$9.99","500 ml -$6.99","250 ml -$3.49"]
         },
       {
             name:"Dahi",
             image_name:"dahi.png",
-            price:"1000Ml-$6.99/ 500ml-$4.50/ 250ml-$2.99",
-            description:"n/a"
+            price:"",
+            description:["1000 ml -$6.99","500 ml -$4.99","250 ml -$2.99"]
         },
          {
             name:"Home Made Paneer",
             image_name:"home_made_panner.png",
             price:"$9.49/lb",
-            description:"n/a"
+            description:[]
         },
         {
             name:"Pure Desi Ghee",
             image_name:"pure_desi_ghee.png",
-            price:"500 gram-$14.99/2 kg-$49.99",
-            description:"N/a"
+            price:"",
+            description:["500 gm -$14.99", "2 kg -$49.99"]
         },
         {
             name:"Tamarind",
             image_name:"tamarind.png",
-            price:"Large $6.00 each/ Small $4.00 each",
-            description:"N/a"
+            price:"",
+            description:["Large $6.00 each", "Small $4.00 each"]
         },
         {
             name:"Tawa Roti",
             image_name:"tawa_roti.png",
-            price:"5 for $3.99",
-            description:"N/A"
+            price:"",
+            description:["5 for $3.99"]
         },
         
       ],
