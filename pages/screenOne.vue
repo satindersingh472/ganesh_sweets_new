@@ -13,7 +13,7 @@
         >
           <v-row>
             <v-col cols="6">
-              <v-card class="rounded-pill">
+              <v-card class="rounded-pill" elevation="10" >
                 <v-img
                   width="100%"
                   :src="imagePath(`${item['image_name']}`)"
