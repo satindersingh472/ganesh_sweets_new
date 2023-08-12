@@ -26,7 +26,7 @@
               <p class="text-h5 font-weight-medium">
                 {{ item["description"] }}
               </p>
-              <p class="text-h3 font-weight-bold" >{{ item["price"] }}</p>
+              <p class="text-h4 font-weight-bold" >{{ item["price"] }}</p>
               <p
                 v-if="item['availablity'] !== ''"
                 class="text-h5 font-weight-bold"
@@ -101,7 +101,7 @@ export default {
           name: "Samosa Chana",
           image_name: "samosa_chana.png",
           // price: "$6.50-Reg Samosa $5.50-Min Samosa",
-          price:"Reg Samosa $6.50 Mini Samosa $6.50",
+          price:"Reg Samosa $6.50 Mini Samosa $5.50",
           description: "Crunchy samosa is served with spicy channe(chickpeas).",
           availablity: "",
         },

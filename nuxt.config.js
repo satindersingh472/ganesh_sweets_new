@@ -75,7 +75,7 @@ export default {
       themes: {
         light: {
           // this is the primary color for website
-          primary: "#fe9d0b",
+          primary: colors.orange.darken4,
           accent: colors.black,
           secondary: colors.amber.darken3,
           info: colors.teal.lighten1,

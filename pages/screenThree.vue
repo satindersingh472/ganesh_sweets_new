@@ -102,10 +102,10 @@ export default {
             "Tea in milk and water with a mixture of herbs and spices.",
         },
         {
-          name:"Elaichi Masala Chai",
+          name:"Elaichi Chai",
           image_name:"elaichi_chai.png",
           price:"$2.50",
-          description:"Elaichi chai made with cardamom and tea masala."
+          description:"Elaichi(cardamom) chai made with milk and sugar"
         },
         {
           name: "Coffee",
@@ -144,7 +144,7 @@ export default {
           name: "Tamarind",
           image_name: "tamarind.png",
           price: "",
-          description: ["Large $6.00 each", "Small $4.00 each"],
+          description: ["Large $6.50 each", "Small $4.50 each"],
         },
         {
           name: "Tawa Roti",

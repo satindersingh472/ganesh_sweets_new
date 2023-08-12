@@ -148,7 +148,7 @@ export default {
           description: [
             "Rasgulla $7.99/lb",
             "Small white $7.99/lb",
-            "Pink Malai $8.99/lb",
+            "Pink Sandwich $8.99/lb",
           ],
         },
         {
@@ -158,7 +158,7 @@ export default {
           description: ["Atta $11.99/lb", "Sooji $11.99/lb", "Besan $11.99/lb"],
         },
         {
-          name: "Sevian/Badana",
+          name: "Sevian & Badana",
           image_name: "badana_seviyan.png",
           price: "$5.99/lb",
           description: [],
