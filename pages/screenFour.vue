@@ -1,5 +1,12 @@
 <template>
-  <div>I am screen four</div>
+  <div class="grid align-center" >
+    <v-container class="grid align-center" >
+      <v-row>
+        <p class="primary--text text-center text-h1 font-weight-bold" >Our Specials</p>
+
+      </v-row>
+    </v-container>
+  </div>
 </template>
 
 <script>
@@ -10,4 +17,6 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+@import "@/scss/global.scss"
+</style>

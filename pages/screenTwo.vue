@@ -109,7 +109,7 @@ export default {
           name: "Chaat Papdi",
           image_name: "chaat_papdi.png",
           price: "$5.99",
-          description: "The best of Bombay chaat, both sweet and sour.",
+          description: "The best of Bombay chat, both sweet and sour.",
           availablity: "",
         },
         {
