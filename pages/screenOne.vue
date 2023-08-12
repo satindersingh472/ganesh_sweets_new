@@ -3,7 +3,6 @@
   <div class="grid align-center">
     <v-container fluid class="grid align-center">
       <h3 class="primary--text text-center  font-weight-bold text-h1">SWEETS</h3>
-
       <v-row class="mt-5">
         <v-col
           cols="6"
@@ -13,7 +12,7 @@
         >
           <v-row>
             <v-col cols="6">
-              <v-card class="rounded-pill" elevation="10" >
+              <v-card class="rounded-pill grey" elevation="10" >
                 <v-img
                   width="100%"
                   :src="imagePath(`${item['image_name']}`)"
@@ -117,6 +116,12 @@ export default {
           ],
         },
         {
+          name:"Channa Laddu",
+          image_name:"channaLaddu.png",
+          price:"$15.99/lb",
+          description:[]
+        },
+        {
           name: "Desi Ghee Pinni",
           image_name: "atta_desi_ghee_pini.png",
           price: "",
@@ -181,4 +186,5 @@ export default {
 <style lang="scss" scoped>
 @import "@/scss/global.scss";
 // @import "@/assets/variables.scss";
+
 </style>

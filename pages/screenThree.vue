@@ -39,7 +39,7 @@
         <v-col cols="6" class="mt-3" v-for="(special, index) in specials" :key="index">
           <v-row>
             <v-col cols="6">
-              <v-card rounded="pill">
+              <v-card class="rounded-pill" flat>
                 <v-img
                   width="100%"
                   :src="imagePath(`${special['image_name']}`)"
@@ -96,16 +96,22 @@ export default {
         },
         {
           name: "Masala Chai",
-          image_name: "masala_chai.png",
+          image_name: "ganeshCup.png",
           price: "$2.49",
           description:
             "Tea in milk and water with a mixture of herbs and spices.",
         },
         {
+          name:"Elaichi Masala Chai",
+          image_name:"elaichi_chai.png",
+          price:"$2.50",
+          description:"Elaichi chai made with cardamom and tea masala."
+        },
+        {
           name: "Coffee",
           image_name: "masala_chai.png",
           price: "$2.49",
-          description: "ty",
+          description: "Indian style coffee made with milk and sugar.",
         },
       ],
 
