@@ -100,7 +100,8 @@ export default {
         {
           name: "Samosa Chana",
           image_name: "samosa_chana.png",
-          price: "Reg samosa $6.50\nMini Samosa $5.50",
+          // price: "$6.50-Reg Samosa $5.50-Min Samosa",
+          price:"Reg Samosa $6.50 Mini Samosa $6.50",
           description: "Crunchy samosa is served with spicy channe(chickpeas).",
           availablity: "",
         },
