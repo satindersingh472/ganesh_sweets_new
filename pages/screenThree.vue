@@ -90,7 +90,7 @@ export default {
         },
         {
           name: "Dudh Patti",
-          image_name: "dudh_pati.png",
+          image_name: "ganeshCup.png",
           price: "$3.49",
           description: "Made with milk, sugar and tea leaves (chai ki patti).",
         },
@@ -109,7 +109,7 @@ export default {
         },
         {
           name: "Coffee",
-          image_name: "masala_chai.png",
+          image_name: "ganeshCup.png",
           price: "$2.49",
           description: "Indian style coffee made with milk and sugar.",
         },
