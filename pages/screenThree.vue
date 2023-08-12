@@ -2,12 +2,17 @@
   <!--this page is for drinks-->
   <div class="grid align-center">
     <v-container fluid class="grid align-center">
-      <h3 class="primary--text text-center text-h3">DRINKS</h3>
-      <v-row class="mt-3">
-        <v-col cols="6" v-for="(item, index) in items" :key="index">
+      <h3 class="primary--text text-center text-h1 font-weight-bold">DRINKS</h3>
+      <v-row class="mt-5">
+        <v-col
+          cols="6"
+          class="mt-3"
+          v-for="(item, index) in items"
+          :key="index"
+        >
           <v-row>
             <v-col cols="6">
-              <v-card rounded="pill">
+              <v-card class="rounded-pill">
                 <v-img
                   width="100%"
                   :src="imagePath(`${item['image_name']}`)"
@@ -17,22 +22,21 @@
             </v-col>
             <v-col
               align-self="center"
-              class="font-weight-bold text-h4"
               cols="6"
             >
-              <p class="primary--text">{{ item["name"] }}</p>
-              <p class="text-h6 font-weight-regular">
+              <p class="primary--text text-h2 font-weight-bold ">{{ item["name"] }}</p>
+              <p class="text-h4 font-weight-medium">
                 {{ item["description"] }}
               </p>
-              <p>{{ item["price"] }}</p>
+              <p class="text-h3 font-weight-bold" >{{ item["price"] }}</p>
             </v-col>
           </v-row>
         </v-col>
       </v-row>
 
-      <h3 class="primary--text text-center text-h3">SPECIAL PRODUCTS</h3>
-      <v-row class="mt-3">
-        <v-col cols="6" v-for="(special, index) in specials" :key="index">
+      <h3 class="primary--text text-center text-h1 font-weight-bold">SPECIAL PRODUCTS</h3>
+      <v-row class="mt-5">
+        <v-col cols="6" class="mt-3" v-for="(special, index) in specials" :key="index">
           <v-row>
             <v-col cols="6">
               <v-card rounded="pill">
@@ -45,14 +49,13 @@
             </v-col>
             <v-col
               align-self="center"
-              class="font-weight-bold text-h4"
               cols="6"
             >
-              <p class="primary--text">{{ special["name"] }}</p>
-              <p v-for="(desc, index) in special['description']" :key="index">
+              <p class="primary--text text-h2 font-weight-bold  ">{{ special["name"] }}</p>
+              <p v-for="(desc, index) in special['description']" :key="index" class="text-h3 font-weight-bold" >
                 {{ desc }}
               </p>
-              <p>{{ special["price"] }}</p>
+              <p class="text-h3 font-weight-bold" >{{ special["price"] }}</p>
             </v-col>
           </v-row>
         </v-col>
@@ -63,9 +66,9 @@
 
 <script>
 export default {
-head:{
-  title:"Drinks"
-},
+  head: {
+    title: "Drinks",
+  },
 
   data() {
     return {
