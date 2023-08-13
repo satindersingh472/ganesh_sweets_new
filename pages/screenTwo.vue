@@ -13,7 +13,7 @@
         >
           <v-row>
             <v-col cols="6">
-              <v-card class="rounded-pill" elevation="10" >
+              <v-card class="rounded-pill" elevation="10">
                 <v-img
                   width="100%"
                   :src="imagePath(`${item['image_name']}`)"
@@ -22,11 +22,13 @@
               </v-card>
             </v-col>
             <v-col align-self="center" cols="6">
-              <p class="primary--text text-h2 font-weight-bold ">{{ item["name"] }}</p>
+              <p class="primary--text text-h2 font-weight-bold">
+                {{ item["name"] }}
+              </p>
               <p class="text-h5 font-weight-medium">
                 {{ item["description"] }}
               </p>
-              <p class="text-h4 font-weight-bold" >{{ item["price"] }}</p>
+              <p class="text-h4 font-weight-bold">{{ item["price"] }}</p>
               <p
                 v-if="item['availablity'] !== ''"
                 class="text-h5 font-weight-bold"
@@ -55,7 +57,7 @@ export default {
           name: "Paneer Pakoda",
           image_name: "paneer_pakoda2.png",
           price: "$11.99/lb",
-          description: "Delicious paneer fitters, both cripsy and crunchy.",
+          description: "Delicious paneer fitters, both crispy and crunchy.",
           availablity: "",
         },
         {
@@ -101,7 +103,7 @@ export default {
           name: "Samosa Chana",
           image_name: "samosa_chana.png",
           // price: "$6.50-Reg Samosa $5.50-Min Samosa",
-          price:"Reg Samosa $6.50 Mini Samosa $5.50",
+          price: " Reg Samosa $6.50 and Mini Samosa $5.50",
           description: "Crunchy samosa is served with spicy channe(chickpeas).",
           availablity: "",
         },

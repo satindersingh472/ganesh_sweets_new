@@ -24,17 +24,17 @@
               align-self="center"
               cols="6"
             >
-              <p class="primary--text text-h2 font-weight-bold ">{{ item["name"] }}</p>
-              <p class="text-h4 font-weight-medium">
+              <p class="primary--text text-h1 font-weight-bold ">{{ item["name"] }}</p>
+              <p class="text-h3 font-weight-medium">
                 {{ item["description"] }}
               </p>
-              <p class="text-h3 font-weight-bold" >{{ item["price"] }}</p>
+              <p class="text-h2 font-weight-bold" >{{ item["price"] }}</p>
             </v-col>
           </v-row>
         </v-col>
       </v-row>
 
-      <h3 class="primary--text text-center text-h1 font-weight-bold">SPECIAL PRODUCTS</h3>
+      <h3 class="primary--text text-center text-h1 mt-10 font-weight-bold">SPECIAL PRODUCTS</h3>
       <v-row class="mt-5">
         <v-col cols="6" class="mt-3" v-for="(special, index) in specials" :key="index">
           <v-row>
@@ -51,11 +51,11 @@
               align-self="center"
               cols="6"
             >
-              <p class="primary--text text-h2 font-weight-bold  ">{{ special["name"] }}</p>
+              <p class="primary--text text-h1 font-weight-bold  ">{{ special["name"] }}</p>
               <p v-for="(desc, index) in special['description']" :key="index" class="text-h3 font-weight-bold" >
                 {{ desc }}
               </p>
-              <p class="text-h3 font-weight-bold" >{{ special["price"] }}</p>
+              <p class="text-h2 font-weight-bold" >{{ special["price"] }}</p>
             </v-col>
           </v-row>
         </v-col>
@@ -80,19 +80,19 @@ export default {
           image_name: "kesar-milk.png",
           price: "$6.50",
           description:
-            "Kesar Badam Milk is loaded with goodness of almonds and saffron.",
+            "Loaded with goodness of almonds and saffron.",
         },
         {
           name: "Elachi Milk Badam",
           image_name: "milk-badam-elachi.png",
           price: "$5.75",
-          description: "Indian drink where almonds are blended with milk.",
+          description: "Almonds blended with milk.",
         },
         {
           name: "Dudh Patti",
           image_name: "ganeshCup.png",
           price: "$3.49",
-          description: "Made with milk, sugar and tea leaves (chai ki patti).",
+          description: "Made with milk, sugar and tea leaves(chai ki patti).",
         },
         {
           name: "Masala Chai",

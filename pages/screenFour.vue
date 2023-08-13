@@ -1,9 +1,10 @@
 <template>
   <div class="grid align-center" >
-    <v-container class="grid align-center" >
+    <v-container class="grid align-center" style="padding: 200px 100px 200px 100px ;"  >
       <v-row>
-        <p class="primary--text text-center text-h1 font-weight-bold" >Our Specials</p>
+        <v-img :src="require('@/assets/images/special_products/chaiSamosa.png')" >
 
+        </v-img>
       </v-row>
     </v-container>
   </div>
