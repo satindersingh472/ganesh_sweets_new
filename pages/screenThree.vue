@@ -12,9 +12,11 @@
         >
           <v-row>
             <v-col cols="6">
-              <v-card class="rounded-pill">
+              <v-card class="rounded-pill" flat>
                 <v-img
                   width="100%"
+                  height="500px"
+                  contain
                   :src="imagePath(`${item['image_name']}`)"
                   :alt="`image of ${item['name']}`"
                 ></v-img>
@@ -76,17 +78,17 @@ export default {
         require(`@/assets/images/drinks/${image_name}`),
       items: [
         {
-          name: "Kesar Milk",
-          image_name: "kesar-milk.png",
-          price: "$6.50",
+          name: "Kesar Milk Badam",
+          image_name: "kesar-milk-badam.png",
+          price: "$4.50",
           description:
-            "Loaded with goodness of almonds and saffron.",
+            "Milk loaded with goodness of almonds and saffron.",
         },
         {
-          name: "Elachi Milk Badam",
-          image_name: "milk-badam-elachi.png",
-          price: "$5.75",
-          description: "Almonds blended with milk.",
+          name: "Elaichi Milk Badam",
+          image_name: "milk-badam-elaichi.png",
+          price: "$4.00",
+          description: "Almonds blended with elaichi milk.",
         },
         {
           name: "Dudh Patti",
