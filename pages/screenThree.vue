@@ -15,30 +15,35 @@
               <v-card class="rounded-pill" flat>
                 <v-img
                   width="100%"
-                  height="500px"
-                  contain
+                  height="300px"
                   :src="imagePath(`${item['image_name']}`)"
                   :alt="`image of ${item['name']}`"
                 ></v-img>
               </v-card>
             </v-col>
-            <v-col
-              align-self="center"
-              cols="6"
-            >
-              <p class="primary--text text-h1 font-weight-bold ">{{ item["name"] }}</p>
-              <p class="text-h3 font-weight-medium">
+            <v-col align-self="center" cols="6">
+              <p class="primary--text text-h3 font-weight-bold">
+                {{ item["name"] }}
+              </p>
+              <p class="text-h5 font-weight-medium">
                 {{ item["description"] }}
               </p>
-              <p class="text-h2 font-weight-bold" >{{ item["price"] }}</p>
+              <p class="text-h4 font-weight-bold">{{ item["price"] }}</p>
             </v-col>
           </v-row>
         </v-col>
       </v-row>
 
-      <h3 class="primary--text text-center text-h1 mt-10 font-weight-bold">SPECIAL PRODUCTS</h3>
+      <h3 class="primary--text text-center text-h1 mt-10 font-weight-bold">
+        SPECIAL PRODUCTS
+      </h3>
       <v-row class="mt-5">
-        <v-col cols="6" class="mt-3" v-for="(special, index) in specials" :key="index">
+        <v-col
+          cols="6"
+          class="mt-3"
+          v-for="(special, index) in specials"
+          :key="index"
+        >
           <v-row>
             <v-col cols="6">
               <v-card class="rounded-pill" flat>
@@ -49,15 +54,18 @@
                 ></v-img>
               </v-card>
             </v-col>
-            <v-col
-              align-self="center"
-              cols="6"
-            >
-              <p class="primary--text text-h1 font-weight-bold  ">{{ special["name"] }}</p>
-              <p v-for="(desc, index) in special['description']" :key="index" class="text-h3 font-weight-bold" >
+            <v-col align-self="center" cols="6">
+              <p class="primary--text text-h3 font-weight-bold">
+                {{ special["name"] }}
+              </p>
+              <p
+                v-for="(desc, index) in special['description']"
+                :key="index"
+                class="text-h4 font-weight-bold"
+              >
                 {{ desc }}
               </p>
-              <p class="text-h2 font-weight-bold" >{{ special["price"] }}</p>
+              <p class="text-h4 font-weight-bold">{{ special["price"] }}</p>
             </v-col>
           </v-row>
         </v-col>
@@ -78,11 +86,10 @@ export default {
         require(`@/assets/images/drinks/${image_name}`),
       items: [
         {
-          name: "Kesar Milk Badam",
+          name: "Kesar Milk",
           image_name: "kesar-milk-badam.png",
           price: "$4.50",
-          description:
-            "Milk loaded with goodness of almonds and saffron.",
+          description: "Goodness of almonds and saffron.",
         },
         {
           name: "Elaichi Milk Badam",
@@ -104,10 +111,10 @@ export default {
             "Tea in milk and water with a mixture of herbs and spices.",
         },
         {
-          name:"Elaichi Chai",
-          image_name:"elaichi_chai.png",
-          price:"$2.50",
-          description:"Elaichi(cardamom) chai made with milk and sugar"
+          name: "Elaichi Chai",
+          image_name: "elaichi_chai.png",
+          price: "$2.50",
+          description: "Elaichi(cardamom) chai made with milk and sugar",
         },
         {
           name: "Coffee",

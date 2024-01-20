@@ -19,6 +19,8 @@ export default {
         "screenTwo",
         "screenThree",
         "screenFour",
+        "complimentary",
+        "rough-work"
       ],
     };
   },
