@@ -56,7 +56,7 @@ export default {
         {
           name: "Paneer Pakoda",
           image_name: "paneer_pakoda2.png",
-          price: "$11.99/lb",
+          price: "$12.99/lb",
           description: "Delicious paneer fitters, both crispy and crunchy.",
           availablity: "",
         },
@@ -117,7 +117,7 @@ export default {
         {
           name: "Kadi Chawal",
           image_name: "Kadi_chawal.png",
-          price: "$6.99 Each Plate",
+          price: "$7.99 Each Plate",
           description:
             "Dish of onion fritters dunked in a spiced yogurt sauce.",
           availablity: " Available every Tuesday",
