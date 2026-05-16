@@ -138,9 +138,9 @@ export default {
           description: ["1000 ml -$6.99", "500 ml -$4.99", "250 ml -$2.99"],
         },
         {
-          name: "Home Made Paneer",
+          name: "Fresh Paneer",
           image_name: "home_made_panner.png",
-          price: "$9.49/lb",
+          price: "$10.49/lb",
           description: [],
         },
         {
